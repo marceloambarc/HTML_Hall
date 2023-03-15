@@ -10,7 +10,7 @@ A [Primeira Página na Web](http://info.cern.ch/hypertext/WWW/TheProject.html) f
 
 ## Usabilidade
 
-```ruby
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
