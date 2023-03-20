@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 4 - Tabela</title>
+    <style>
+        .container {
+            height: 10em;
+            position: relative 
+        }
+        .container table {
+            margin: 0;
+            margin-top: 10%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table border>
+            <caption>Turma 3B</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Matéria</th>
+                    <th scope="col">Aluno</th>
+                    <th scope="col">Nota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Matemática</td>
+                    <td>Guilherme</td>
+                    <td style="background-color: green;">75</td>
+                </tr>
+                <tr>
+
+                    <td>Thiago</td>
+                    <td style="background-color: green;">80</td>
+                </tr>
+                <tr>
+
+                    <td>Júlia</td>
+                    <td style="background-color: green;">80</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Português</td>
+                    <td>Guilherme</td>
+                    <td style="background-color: red;">40</td>
+                </tr>
+                <tr>
+
+                    <td>Thiago</td>
+                    <td style="background-color: red;">67</td>
+                </tr>
+                <tr>
+
+                    <td>Júlia</td>
+                    <td style="background-color: green;">98</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">História</td>
+                    <td>Guilherme</td>
+                    <td style="background-color: green;">90</td>
+                </tr>
+                <tr>
+
+                    <td>Thiago</td>
+                    <td style="background-color: green;">100</td>
+                </tr>
+                <tr>
+
+                    <td>Júlia</td>
+                    <td style="background-color: red;">50</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
