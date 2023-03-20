@@ -1,6 +1,6 @@
-# Conquer HTML
+# HTML Hall
 
-Conquer Plus é o streaming de cursos da Conquer, com acesso ilimitado aos melhores conteúdos, professores referências de mercado e ao melhor da metodologia Conquer.
+HTML Hall é um agrupamento de cursos e estudos em HTML, com a busca de melhores conteúdos, comunidades e referências do mercado e ao melhor da metodologia.
 
 ## HTML 5
 

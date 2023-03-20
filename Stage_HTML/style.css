@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    text-align: center;
+    padding-top: 160px;
+    background-image: url(https://st3.depositphotos.com/2757094/14534/i/450/depositphotos_145346375-stock-photo-sign-of-faith-glowing-holy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+h3 {
+    font-size: 14px;
+    line-height: 50px;
+    color: #FFC700;
+    margin-bottom: 72px;
+}
+
+h1 span {
+    color: gray;
+}
+
+h1 {
+    color: #FFC700;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+}
+
+a {
+    padding: 12px 32px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: gray;
+    opacity: .6;
+}
+
+p {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 72px;
+    color: white;
+    opacity: .6;
+}
+
+a:hover,
+.btn-primary {
+    text-decoration: none;
+    color: black;
+    background-color: #FFC700;
+}
