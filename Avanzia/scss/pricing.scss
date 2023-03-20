@@ -1,0 +1,124 @@
+/*Primary Colors*/
+$color1: #000000;
+$color2: navy;
+$color3: white;
+
+/*Shadow Color*/
+$shadowColor: gray;
+
+/*Secondary Colors*/
+$colorRoyal1: goldenrod;
+$colorRoyal2: #FFDF00;
+$colorRoyal3: gold;
+$colorRoyal4: #CFB53B;
+
+/*Text Aligment*/
+$text-align: center;
+
+/*Max width*/
+$width: 100%;
+
+section {
+    margin-top: 23vh;
+  }
+
+.pricingdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $text-align;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+
+    ul.theplan {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        color: $color3;
+        background: $colorRoyal2;
+        position: relative;
+        width: 260px;
+
+        /* width of each table */
+        margin-right: 10px;
+
+        /* spacing between tables */
+        margin-bottom: 1em;
+        transition: all .5s;
+        text-align: $text-align;
+        margin-bottom: 25px;
+
+        :hover {
+            transform: scale(1.05);
+            transition: all .5s;
+            z-index: 100;
+            box-shadow: 0 0 10px $shadowColor;
+        }
+
+        :nth-of-type(2) {
+            background: $colorRoyal3;
+        }
+
+        :nth-of-type(3) {
+            background: $colorRoyal1
+        }
+
+        :nth-of-type(4) {
+            background: $colorRoyal4;
+        }
+
+        /* remove right margin in very last table */
+        :last-of-type {
+            margin-right: 0;
+        }
+
+        li {
+            margin: 10px 20px;
+            position: relative;
+
+            .title {
+                font-size: 150%;
+                font-weight: bold;
+                text-align: $text-align;
+                margin-top: 20px;
+                text-transform: uppercase;
+                border-bottom: 5px solid $color3;
+            }
+
+            /* very last LI within each pricing UL */
+            :last-of-type {
+                text-align: $text-align;
+            }
+        }
+    }
+
+
+    a.pricebutton {
+    background: $color3;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px auto;
+    border-radius: 5px;
+    color: $color2;
+    text-transform: uppercase;
+
+    :hover {
+        transform: scale(1.05);
+        transition: all .5s;
+        z-index: 100;
+        box-shadow: 0 0 10px $shadowColor;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    .pricingdiv ul.theplan {
+      border-radius: 0;
+      width: $width;
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+}

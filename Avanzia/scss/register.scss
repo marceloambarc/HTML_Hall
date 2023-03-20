@@ -1,0 +1,42 @@
+/*Primary Colors*/
+$color1: #000000;
+$color2: navy;
+$color3: white;
+
+/*Secondary Colors*/
+$colorRoyal1: goldenrod;
+
+/*Text Aligment*/
+$text-align: center;
+
+/*Max width*/
+$width: 100%;
+
+$display: inline-block;
+
+form {
+    display: $display;
+    margin-top: 25vh;
+    margin-left: 25%;
+    width: 45%;
+    height: 80vh;
+}
+
+input[type=date] {
+    width: $width;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: $display;
+    border: 1px solid $color3;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+footer {
+    color: $color3;
+    background-color: $color1;
+    text-align: $text-align;
+    width: $width;
+    height: 35vh;
+    padding-top: 8vh;
+}

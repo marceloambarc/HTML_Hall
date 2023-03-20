@@ -1,0 +1,147 @@
+/*Primary Colors*/
+$color1: #000000;
+$color2: navy;
+$color3: white;
+
+/*Secondary Colors*/
+$colorRoyal1: goldenrod;
+
+/*Text Aligment*/
+$text-align: center;
+
+/*Max width*/
+$width: 100%;
+
+
+/*Beggining of css file*/
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ body::-webkit-scrollbar {
+    display: none;
+    }
+
+    /* Hide scrollbar for IE and Edge */
+    body {
+    -ms-overflow-style: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .navbar-brand {
+        transition: ease 0.3s;
+    }
+
+    .navbar-brand:hover {
+        cursor: pointer;
+        opacity: .5;
+    }
+    .news {
+        position: relative;
+        width: $width;
+        padding: 20%;
+        background-color: $color1;
+        margin-top: 20px;
+        text-align: $text-align;
+    }
+
+    #intro {
+        position: relative;
+        width: $width;
+        height: 50vh;
+    }
+
+    .intro-col {
+        float: left;
+        width: 25%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+        background-color: lightseagreen;
+        text-align: $text-align;
+    }
+
+    .intro-row::after {
+        content: "";
+        display: table;
+        clear: both;
+        text-align: $text-align;
+    }
+    .intro-container {
+        padding: 31%;
+        transition: 0.3s;
+    }
+    .intro-container:hover {
+        background-color: $color2;
+        color: $color3;
+        cursor: pointer;
+    }
+
+    .separator {
+        background-color: $color1;
+        margin: auto;
+        width: $width;
+        height: 25vh;
+        text-align: $text-align;
+        padding: 5%;
+    }
+
+    #content {
+        margin-top: 120vh;
+    }
+
+    .welcome, .welcome-2, .rules, .help, .review, .tips {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .tips {
+        text-align: $text-align;
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+
+    .t-banner {
+        text-align: $text-align;
+        background-color: $color1;
+        padding: 10% 16% 10% 16%;
+        margin: 2%;
+    }
+
+    .review {
+        text-align: right;
+        width: 70%;
+    }
+
+    .photo {
+        text-align: $text-align;
+        background-color: $color1;
+        height: 100%;
+        padding-top: 25%;
+        transition: ease-in 0.3s;
+    }
+
+    .photo:hover {
+        background-color: $color2;
+        color: $color3;
+        cursor: pointer;
+    }
+
+    footer {
+        color: $color3;
+        background-color: $color1;
+        text-align: $text-align;
+        width: $width;
+        height: 90vh;
+        padding-top: 8%;
+        margin-top: 1 2vh;
+    }
+
+    #footer-container {
+        width: 70%;
+        margin: auto;
+    }
+
+    .partners-row h5{
+        margin-bottom: 10%;
+        color: $colorRoyal1;
+    }
