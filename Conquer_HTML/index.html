@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Mão na massa</title>
 </head>
+
 <body>
     <nav>
         <h1>Categorias</h1>
@@ -16,7 +18,8 @@
     </nav>
     <h1>Marcelo Amaral Barcelos</h1>
     <h3>Web Developer</h3>
-    <img src="https://media.licdn.com/dms/image/C4D03AQHj831Y7bA7zA/profile-displayphoto-shrink_100_100/0/1578526514644?e=1683763200&v=beta&t=wgkUBMvRfaRsO_PBparIgEo7SQm8qkrAs3Dlir3hUSk" alt="LinkedIn Profile picture" width="100" height="100">
+    <img src="https://media.licdn.com/dms/image/C4D03AQHj831Y7bA7zA/profile-displayphoto-shrink_100_100/0/1578526514644?e=1683763200&v=beta&t=wgkUBMvRfaRsO_PBparIgEo7SQm8qkrAs3Dlir3hUSk"
+        alt="LinkedIn Profile picture" width="100" height="100">
     <p>Meu perfil <a href="https://www.linkedin.com/in/marceloambarc/">LinkedIn</a></p>
     <br>
     <br>
@@ -25,12 +28,62 @@
     <div class="content">
         <form>
             <label for="name">Nome</label>
-            <input type="text" id="name" name="name" />
+            <input type="text" id="name" name="name" required />
             <label for="password">Senha</label>
-            <input type="password" id="password" name="password" />
+            <input type="password" id="password" name="password" pattern=".{6,}" required />
             <label for="description">Descrição</label>
             <input type="text" id="description" name="description" />
-        </form>
+
     </div>
+    <br />
+    <div class="content">
+        <label for="whatsApp">WhatsApp</label>
+        <input type="tel" id="whatsApp" name="whatsApp" />
+        <label for="range">Qual seu nível de conhecimento sobre HTML</label>
+        <input type="range" id="range" name="range" />
+    </div>
+    <br />
+    <div class="content">
+        <select>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select>
+    </div>
+    <br />
+    <fieldset>
+        <legend>Quais frutas você gosta mais?</legend>
+        <div>
+            <label for="banana">Banana</label>
+            <input type="checkbox" id="banana" name="banana">
+        </div>
+        <div>
+            <label for="mamao">Mamão</label>
+            <input type="checkbox" id="mamao" name="mamao">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Quais das tecnologias abaixo você tem mais conhecimento?</legend>
+        <div>
+            <label for="hmtl">HMTL</label>
+            <input type="radio" id="hmtl" name="technology" checked>
+        </div>
+        <div>
+            <label for="css">CSS</label>
+            <input type="radio" id="css" name="technology">
+        </div>
+        <div>
+            <label for="javascript">JAVASCRIPT</label>
+            <input type="radio" id="javascript" name="technology">
+        </div>
+    </fieldset>
+    <br />
+
+    <label>Volume: </label>
+    <input type="range" min="0" max="50" value="10" />
+    <input type="button" value="OK" />
+    <input type="submit" value="Enviar" />
+    <input type="reset" value="Limpar dados" />
+    </form>
 </body>
+
 </html>
