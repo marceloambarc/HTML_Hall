@@ -24,3 +24,15 @@ A [Primeira Página na Web](http://info.cern.ch/hypertext/WWW/TheProject.html) f
 </body>
 </html>
 ```
+
+## CSS
+
+CSS possui certas técnicas para melhor entendimento, e umas destas técnicas é a especificidade da regra.
+Sendo elas:
+
+<ul>
+    <li>ID'S</li>
+    <li>Classes</li>
+    <li>Tags</li>
+    <li>Pontuação</li>
+</ul>
